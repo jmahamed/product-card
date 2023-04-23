@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+:root {
+  --eggshell-white: #ECECEC;
+  --gray: #979797;
+  --rose: #F8D7D7;
+  --soft-peach:#F8E0D7;
+  --magnolia:#F8EFD7;
+  --peach:#F8B69D;
+
+  --button-hover: #FFC4AD;
+  --button-pressed:#F1AD94;
+}
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.bg {
+  background-color: var(--soft-peach);
+}
+
+.product-card {
+  display: flex;
+  width: 677px;
+  height: 451px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.product-img img{
+  border-radius: 16px 0px 0px 16px;
+}
+
+.product-info {
+  padding: 40px 32px;
+}
+
+.h3-heading h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--peach);
+}
+
+.h1-heading h1{
+  font-family: 'Noto Serif', serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding-right: 100px;
+  line-height: 35.2px;
+  margin-top: 8px;
+  letter-spacing: -0.02em;
+
+}
+
+.product-description {
+  margin-top: 12px;
+  margin-right: 18px;
+}
+
+.product-description p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: var(--gray);
+  letter-spacing: -0.01em;
+}
+
+.color {
+  margin-top: 16px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 16.8px;
+}
+
+
+.colors {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.color-selector {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent; /* add this line */
+}
+
+.color-selector:hover {
+  border: 1px black solid;
+  cursor: pointer;
+}
+
+.color-selector:active {
+  transform: scale(1.1);
+}
+
+.color-selector.active { 
+  border-color: black;
+}
+
+.price,
+.price-linethrough,
+.usd,
+.usd-2 {
+  display: inline-flex;
+  margin-top: 24px;
+  font-family: 'Noto Serif', serif;
+}
+
+.price{
+  font-size: 24px;
+  line-height: 26.4px;
+  letter-spacing: -0.02em;
+}
+
+.price-linethrough{
+  font-size: 14px;
+  color: var(--gray);
+  text-decoration: line-through;
+  margin-left: 6px;
+  letter-spacing: -0.02em;
+
+}
+
+.usd {
+  font-size: 14px;
+  margin-left: 5px;
+  letter-spacing: -0.02em;
+
+}
+
+.usd-2 {
+  font-size: 10px;
+  color: var(--gray);
+  text-decoration: line-through;
+  margin-left: 3px;
+  letter-spacing: -0.02em;
+
+}
+
+#softpeach {
+background-color: var(--soft-peach);
+}
+
+#rose{
+  background-color: var(--rose);
+}
+
+#magnolia {
+  background-color: var(--magnolia);
+}
+
+#eggshell{
+  background-color: var(--eggshell-white);
+}
+
+.btn  {
+  margin-top: 17px;
+}
+
+.btn button {
+  width: 333px;
+  height: 48px;
+  background-color: var(--peach);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover);
+}
+
+.btn button:active {
+  background-color: var(--button-pressed);
+}
